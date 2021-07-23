@@ -1,0 +1,124 @@
+<style type="text/css">
+    #header{
+        height: 46px;
+        width: 500px;
+    }
+    #stageContainer{
+        width: 500px;
+    }
+    #uristage{
+        width: 498px;
+        height: 160px;
+        border: 1px solid grey;
+        resize: none;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    #buttonContainer{
+        width: 500px;
+        height: 22px;
+        
+    }
+    #decodeButton{
+        width: 198px;
+        height: 30px;
+        border-bottom-left-radius: 4px;
+        border-left: 1px solid grey;
+        background-color: #eafbea;
+    }
+    #clearButton{
+        width: 98px;
+        height: 30px;
+        background-color: #FBCCC2;
+    }
+    #encodeButton{
+        width: 198px;
+        height: 30px;
+        border-bottom-right-radius: 4px;
+        border-right: 1px solid grey;
+        background-color: #FFFFCC;
+    }
+    #textContainer{
+        width: 480px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .buttonAlign{
+        display: inline-block;
+        float: left;
+        border-bottom: 1px solid grey;
+        border-left: 1px solid grey;
+        color: #242421;
+        text-align: center;
+        /* padding-top: 10px; */
+        cursor: pointer;
+    }
+    .uriHeading{
+        /* font-weight: bold; */
+        font-size: 32px;
+        /* text-decoration: underline; */
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+    }
+    hr.uriHeading{
+        margin: 0px;
+        border: 0px;
+        height: 2px;
+        width: 498px;
+        background-color: #000000
+    }
+    .uriButton{
+        margin: 8px;
+        padding: 0px;
+    }
+</style>
+
+<!-- header -->
+<div id="header">
+    <p class="uriHeading">URI Encode / Decode</p>
+    <hr class="uriHeading">
+</div>
+
+<!-- container for the stage -->
+<div id="stageContainer">
+    <textarea id="uristage" placeholder="Enter your text here..."></textarea>
+</div>
+
+<!-- container for buttons -->
+<div id="buttonContainer">
+    <div id="decodeButton" class="buttonAlign" onclick="pkdecode()"><p class="uriButton">Decode</p></div>
+    <div id="clearButton" class="buttonAlign" onclick="clearitall()"><p class="uriButton">Clear</p></div>
+    <div id="encodeButton" class="buttonAlign" onclick="pkencode()"><p class="uriButton">Encode</p></div>
+</div>
+
+<!-- instructions and things -->
+<div id="textContainer">
+    <p>Use this tool to accomplish the following by inputting a URL or string of text in thye above field:</p>
+    <ul>
+        <li>Decode strings to readable text</li>
+        <li>Encode readable text to encoded strings</li>
+    </ul>
+</div>
+
+ 
+    
+<script language = "javascript">
+    //decode
+    function pkdecode() {
+        var urimod = decodeURIComponent(document.getElementById("uristage").value);
+        document.getElementById("uristage").value = urimod;
+    }
+    
+    //encode
+    function pkencode() {
+        var urimod = encodeURIComponent(document.getElementById("uristage").value);
+        document.getElementById("uristage").value = urimod;
+    }
+    
+    //clear
+    function clearitall() {
+        document.getElementById("uristage").value = "";
+    }
+</script>
