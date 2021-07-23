@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/gaub.css">
+        <script src="script/gaub.js"></script>
+        <title>Google Analytics Campaign URL Builder</title>
+    </head>
+    <body>
+        <!-- header -->
+        <div id="gaubHeader">
+            <p class="gaubTitle">Google Analytics Campaign URL Builder</p>
+            <hr class="gaubtitle">
+        </div>
+        
+        <!-- data entry -->
+        <div id="gaub">            
+            <table id="valtab">
+                <tbody>
+                    <tr id="rowone">
+                        <td><p class="fieldTitles">Destination URL* &nbsp;</p></td>
+                        <td><input type="text" id="website_url" size="40" value="" placeholder="Enter Destination URL..."></td>
+                    </tr>
+                    <tr id="rowtwo">
+                        <td><p class="fieldTitles">Campaign Source* &nbsp;</p></td>
+                        <td><input type="text" id="campaign_source" size="40" value="" placeholder="Enter Campaign Source..."></td>
+                    </tr>
+                    <tr id="rowthree">
+                        <td><p class="fieldTitles">Campaign Medium* &nbsp;</p></td>
+                        <td><input type="text" id="campaign_medium" size="40" value="" placeholder="Enter Campaign Medium..."></td>
+                    </tr>
+                    <tr id="rowfour">
+                        <td><p class="fieldTitles">Campaign Name* &nbsp;</p></td>
+                        <td><input type="text" id="campaign_name" size="40" value="" placeholder="Enter Campaign Name..."></td>
+                    </tr>
+                    <tr id="rowfive">
+                        <td><p class="fieldTitles">Campaign Term &nbsp;</p></td>
+                        <td><input type="text" id="campaign_term" size="40" value="" placeholder="Enter Campaign Term..."></td>
+                    </tr>
+                    <tr id="rowsix">
+                        <td><p class="fieldTitles">Campaign Content &nbsp;</p></td>
+                        <td><input type="text" id="campaign_content" size="40" value="" placeholder="Enter Campaign Content..."></td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </div>
+        
+        <!-- output -->
+        <div id="utmOutput">
+            <!-- <p class="outputText outputTextHeader">Campaign URL</p> -->
+            <textarea id="utmstage"></textarea>
+            
+            <div id='buttonContainer'>
+                <div id="utmaction" class="buttonClick" onclick="utmgo();"><p class="uriButton">Generate</p></div>
+                <div id="clearButton" class="buttonClick" onclick="utmno();"><p class="uriButton">Reset</p></div>
+            </div> 
+            
+            <p class="outputText outputTextIndent">There are five parameters that you can add to your campaign URLs. Please <a href="https://support.google.com/analytics/answer/1033863" target="_blank">read more about them</a> before using this tool to generate your URLs.</p>
+             
+            
+        </div>
+ 
+            
+        
+    </body>
+</html>

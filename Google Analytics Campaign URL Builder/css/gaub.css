@@ -1,0 +1,84 @@
+/* 
+CSS for Google Analytics Campaign URL Builder
+*/
+
+#gaub{
+
+    width: 530px;
+}
+#gaubHeader{
+    height: 40px;
+    width: 530px;
+}
+#valtab{
+    margin-left: 14px;
+}
+#utmaction{
+    border-bottom-left-radius: 4px;
+    background-color: #eafbea;
+}
+#clearButton{
+    border-bottom-right-radius: 4px;
+    background-color: #FBCCC2;
+}
+#utmOutput{
+    height: 200px;
+    width: 500px;
+    margin-top: 6px;
+}
+#utmstage{
+    height: 80px;
+    width: 460px;
+    border: 1px solid grey;
+    margin-left: 20px;
+    word-wrap: break-word;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    resize: none;   
+}
+#buttonContainer{
+    width: 460px;
+    height: 34px;
+    margin-left: 20px;
+}
+.buttonClick{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid grey;
+    width: 228px;
+    height: 28px;
+    cursor: pointer;
+    
+}
+.gaubTitle{
+    margin: 0px;
+    padding: 0px;
+    font-size: 26px;
+}
+hr.gaubtitle{
+    margin: 0px;
+    padding: 0px;
+    height: 2px;
+    width: 498px;
+    background-color: #000000;
+}
+.outputText{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.outputTextHeader{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.outputTextIndent{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fieldTitles{
+    text-align: right;
+}
+.uriButton{
+    margin: 5px;
+    padding: 0px;
+}
