@@ -1,0 +1,35 @@
+#countHeader{
+    width: 500px; 
+    height: 40px; 
+}
+#countbase{
+    width: 500px; 
+    height = 500px; 
+}
+#countin{
+    width: 400px; 
+    height: 300px; 
+    resize: none; 
+    margin-left: 50px;
+}
+#countOut{
+    width: 500px;
+    height: 26px;    
+    margin-top: 10px;
+}
+.countAway{
+    margin-left: 50px;
+}
+.headerTitle{
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+}
+hr.headertitle{
+    margin: 0px;
+    padding: 0px;
+    height: 2px;
+    width: 498px;
+    background-color: #000000;
+
+}
