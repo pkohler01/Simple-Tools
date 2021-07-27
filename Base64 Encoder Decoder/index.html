@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>URI Encoder / Decoder</title>
+        <link rel="stylesheet" href="css/base.css">
+        <script src="script/base.js"></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+
+
+            <!-- header -->
+            <div id="header">
+                <p class="uriHeading">Base64 Encode / Decode</p>
+                <hr class="uriHeading">
+            </div> <!-- /header -->
+
+
+            <!-- container for the stage -->
+            <div id="stageContainer">
+                <textarea id="uristage" placeholder="Enter your text here..."></textarea>
+            </div> <!-- /stageContainer -->
+
+
+            <!-- container for buttons -->
+            <div id="buttonContainer">
+                <div id="decodeButton" class="buttonAlign" onclick="pkdecode()"><p class="uriButton">Decode</p></div>
+                <div id="clearButton" class="buttonAlign" onclick="clearitall()"><p class="uriButton">Clear</p></div>
+                <div id="encodeButton" class="buttonAlign" onclick="pkencode()"><p class="uriButton">Encode</p></div>
+            </div> <!-- /buttonContainer -->
+
+
+            <!-- instructions and things -->
+            <div id="textContainer">
+                <p>Use this tool to accomplish the following by inputting a URL or string of text in thye above field:</p>
+                <ul>
+                    <li>Decode Base64 strings</li>
+                    <li>Encode to Base64 encoded strings</li>
+                </ul>
+            </div> <!-- /textContainer -->
+            
+            
+        </div> <!-- /mainContainer -->
+    </body>
+</html>
