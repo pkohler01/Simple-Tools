@@ -1,6 +1,6 @@
 //decode
 function pkdecode() {
-    var urimod = decodeURIComponent(document.getElementById("uristage").value); //input
+    var urimod = document.getElementById("uristage").value; //input
     var decodedData = window.atob(urimod); //decoding the string
     decodedData = decodeURIComponent(decodedData); //URI decoding for special characters
     document.getElementById("uristage").value = decodedData; //output
